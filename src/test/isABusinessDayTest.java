@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @Author Ole K. Olsen
  * 17.05.2017.
  */
-class isABusinessDayNorwayTest {
+class isABusinessDayTest {
     private ItIsABusinessDayInNorway itIsABusinessDayInNorway = null;
 
     @BeforeEach
