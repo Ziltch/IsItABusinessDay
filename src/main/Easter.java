@@ -1,7 +1,8 @@
 package main;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  * @Author Ole K. Olsen
@@ -9,7 +10,7 @@ import java.util.GregorianCalendar;
  */
 public class Easter {
 
-    public Calendar whenIsEaster(int year) {
+    public LocalDateTime whenIsEaster(int year) {
         int Y = year;
         int a = Y % 19;
         int b = Y / 100;
@@ -25,10 +26,10 @@ public class Easter {
         int m = (a + 11 * h + 22 * L) / 451;
         int month = (h + L - 7 * m + 114) / 31;
         int day = ((h + L - 7 * m + 114) % 31) + 1;
-        Calendar cal = new GregorianCalendar();
-        cal.set(Calendar.YEAR, year);
-        cal.set(Calendar.MONTH, month);
-        cal.set(Calendar.DAY_OF_MONTH, day);
-        return cal;
+
+        LocalDate result = LocalDate.of(year, month, day);
+        LocalDateTime easter = LocalDateTime.of(result, LocalTime.of(0,0));
+
+        return easter;
     }
 }
