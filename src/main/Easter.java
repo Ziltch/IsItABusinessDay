@@ -10,6 +10,11 @@ import java.time.LocalTime;
  */
 public class Easter {
 
+    /**
+     *
+     * @param year The year that the easter date is getting calculated from
+     * @return The date of easter for that year
+     */
     public LocalDateTime whenIsEaster(int year) {
         int Y = year;
         int a = Y % 19;

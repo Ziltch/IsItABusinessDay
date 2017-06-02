@@ -13,74 +13,80 @@ import java.util.Locale;
  */
 public class NorwayHolidays {
 
-    public boolean itIsAHolidayInNorway(LocalDateTime inputTime, LocalDateTime dateOfEaster){
+    /**
+     *
+     * @param inputDay Input of the day one wants to to check the type of
+     * @param dateOfEaster Day of easter for the year of the day getting checked
+     * @return boolean true if the day corresponds with a holiday, false if not
+     */
+    public boolean isItAHolidayInNorway(LocalDateTime inputDay, LocalDateTime dateOfEaster){
 
         TemporalField tf = WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear();
-        int inputWeekOfYear = inputTime.get(tf);
+        int inputWeekOfYear = inputDay.get(tf);
         int easterWeekOfYear = dateOfEaster.get(tf);
 
         //Første nyttårsdag
-        if (inputTime.getMonth() == Month.JANUARY && inputTime.getDayOfMonth() == 1) {
+        if (inputDay.getMonth() == Month.JANUARY && inputDay.getDayOfMonth() == 1) {
             return true;
         }
 
         //Palmesøndag
-        if (inputTime.getDayOfWeek() == DayOfWeek.SUNDAY && inputWeekOfYear == easterWeekOfYear-1){
+        if (inputDay.getDayOfWeek() == DayOfWeek.SUNDAY && inputWeekOfYear == easterWeekOfYear-1){
             return true;
         }
 
         //Skjærtorsdag
-        if (inputTime.getDayOfWeek() == DayOfWeek.THURSDAY && inputWeekOfYear == easterWeekOfYear){
+        if (inputDay.getDayOfWeek() == DayOfWeek.THURSDAY && inputWeekOfYear == easterWeekOfYear){
             return true;
         }
 
         //Langfredag
-        if (inputTime.getDayOfWeek() == DayOfWeek.FRIDAY && inputWeekOfYear == easterWeekOfYear){
+        if (inputDay.getDayOfWeek() == DayOfWeek.FRIDAY && inputWeekOfYear == easterWeekOfYear){
             return true;
         }
 
         //Påske
-        if(inputTime.getYear() == dateOfEaster.getYear() && inputTime.getMonth() == dateOfEaster.getMonth() && inputTime.getDayOfMonth() == dateOfEaster.getDayOfMonth()){
+        if(inputDay.getYear() == dateOfEaster.getYear() && inputDay.getMonth() == dateOfEaster.getMonth() && inputDay.getDayOfMonth() == dateOfEaster.getDayOfMonth()){
             return true;
         }
 
         //Andre påskedag
-        if (inputTime.getDayOfWeek() == DayOfWeek.MONDAY && inputWeekOfYear-1 == easterWeekOfYear){
+        if (inputDay.getDayOfWeek() == DayOfWeek.MONDAY && inputWeekOfYear-1 == easterWeekOfYear){
             return true;
         }
 
         //1 Mai
-        if (inputTime.getMonth() == Month.MAY && inputTime.getDayOfMonth() == 1){
+        if (inputDay.getMonth() == Month.MAY && inputDay.getDayOfMonth() == 1){
             return true;
         }
 
         //Nasjonaldagen
-        if (inputTime.getMonth() == Month.MAY && inputTime.getDayOfMonth() == 17){
+        if (inputDay.getMonth() == Month.MAY && inputDay.getDayOfMonth() == 17){
             return true;
         }
 
         //Kristi himmelfart
-        if (inputTime.getDayOfYear() == dateOfEaster.getDayOfYear()+39){
+        if (inputDay.getDayOfYear() == dateOfEaster.getDayOfYear()+39){
             return true;
         }
 
         //Pinse
-        if (inputTime.getDayOfYear() == dateOfEaster.plusDays(49).getDayOfYear()){
+        if (inputDay.getDayOfYear() == dateOfEaster.plusDays(49).getDayOfYear()){
             return true;
         }
 
         //Andre pinsedag
-        if (inputTime.getDayOfYear() == dateOfEaster.plusDays(50).getDayOfYear()){
+        if (inputDay.getDayOfYear() == dateOfEaster.plusDays(50).getDayOfYear()){
             return true;
         }
 
         //Første juledag
-        if (inputTime.getMonth() == Month.DECEMBER && inputTime.getDayOfMonth() == 25){
+        if (inputDay.getMonth() == Month.DECEMBER && inputDay.getDayOfMonth() == 25){
             return true;
         }
 
         //Andre juledag
-        if (inputTime.getMonth() == Month.DECEMBER && inputTime.getDayOfMonth() == 26){
+        if (inputDay.getMonth() == Month.DECEMBER && inputDay.getDayOfMonth() == 26){
             return true;
         }
 

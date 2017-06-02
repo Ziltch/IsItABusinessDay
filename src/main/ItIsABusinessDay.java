@@ -17,48 +17,57 @@ public class ItIsABusinessDay{
     private NorwayHolidays norway = new NorwayHolidays();
     private ArrayList<DayOfWeek> notWorkingDaysInWeek = new ArrayList<>();
 
-    public TypeOfDay itIsABusinessDay(LocalDateTime thisDayInput, List<DayOfWeek> notWorkingDaysInWeekInput) {
+    /**
+     *
+     * @param inputDay Input of the day one wants to to check the type of
+     * @param daysOffInWeek Weekdays that are off each week
+     * @return TypeOfDay What type of day it is
+     */
+    public TypeOfDay itIsABusinessDay(LocalDateTime inputDay, List<DayOfWeek> daysOffInWeek) {
 
-        LocalDateTime thisDay = thisDayInput.withHour(0).withMinute(0).withSecond(0);
-        LocalDateTime dayBefore = thisDay.minusDays(1);
-        LocalDateTime dayAfter = thisDay.plusDays(1);
+        LocalDateTime day = inputDay.withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime dayBefore = day.minusDays(1);
+        LocalDateTime dayAfter = day.plusDays(1);
 
-        boolean isThisDayBusinessDay = isDayBusinessDay(thisDay, notWorkingDaysInWeekInput);
-        boolean isDayBeforeBusinessDay = isDayBusinessDay(dayBefore, notWorkingDaysInWeekInput);
-        boolean isDayAfterBusinessDay = isDayBusinessDay(dayAfter, notWorkingDaysInWeekInput);
+        boolean isThisDayBusinessDay = isDayBusinessDay(day, daysOffInWeek);
+        boolean wasPreviousDayBusinessDay = isDayBusinessDay(dayBefore, daysOffInWeek);
+        boolean isNextDayBusinessDay = isDayBusinessDay(dayAfter, daysOffInWeek);
 
         if (isThisDayBusinessDay) {
-            if(!isDayBeforeBusinessDay && !isDayAfterBusinessDay){
-                System.out.println("Squeezed");
+            if(!wasPreviousDayBusinessDay && !isNextDayBusinessDay){
                 return TypeOfDay.SQUEEZEDINDAY;
             } else {
-                System.out.println("Business");
                 return TypeOfDay.BUSINESSDAY;
             }
         } else {
-            System.out.println("Free");
             return TypeOfDay.DAYOFF;
         }
     }
 
-    private boolean isDayBusinessDay(LocalDateTime dayInput,
-                                     List<DayOfWeek> notWorkingDaysInWeekInput){
+    /**
+     *
+     * @param day Input of the day one wants to to check the type of
+     * @param daysOffInWeek Weekdays that are off each week
+     * @return boolean of whether the day is a business day or not
+     */
+    private boolean isDayBusinessDay(LocalDateTime day, List<DayOfWeek> daysOffInWeek){
         notWorkingDaysInWeek.clear();
-        notWorkingDaysInWeek.addAll(notWorkingDaysInWeekInput);
+        notWorkingDaysInWeek.addAll(daysOffInWeek);
         boolean isBusinessDay = true;
-        LocalDateTime dateOfEaster = easter.whenIsEaster(dayInput.getYear());
 
-        //Dagene i uken det er fri
+        LocalDateTime dateOfEaster = easter.whenIsEaster(day.getYear());
+
+        //Days off a week
         if (!(notWorkingDaysInWeek.isEmpty())) {
             for (int i = 0; i < notWorkingDaysInWeek.size(); i++) {
                 System.out.println(notWorkingDaysInWeek.get(i));
-                if (dayInput.getDayOfWeek() == notWorkingDaysInWeek.get(i)) {
+                if (day.getDayOfWeek() == notWorkingDaysInWeek.get(i)) {
                     isBusinessDay = false;
                 }
             }
         }
 
-        if (norway.itIsAHolidayInNorway(dayInput, dateOfEaster)) {
+        if (norway.isItAHolidayInNorway(day, dateOfEaster)) {
             isBusinessDay = false;
         }
         return isBusinessDay;

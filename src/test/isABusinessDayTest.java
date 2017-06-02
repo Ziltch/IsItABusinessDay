@@ -39,22 +39,16 @@ class isABusinessDayTest {
 
         //Monday
         assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(2), notWorkingDaysInWeek));
-
         //Tuesday
         assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(3), notWorkingDaysInWeek));
-
         //Wednesday
         assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(4), notWorkingDaysInWeek));
-
         //Thursday
         assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(5), notWorkingDaysInWeek));
-
         //Friday
         assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(6), notWorkingDaysInWeek));
-
         //Saturday
         assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(7), notWorkingDaysInWeek));
-
         //Sunday
         assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate.withDayOfMonth(8), notWorkingDaysInWeek));
     }
@@ -92,8 +86,10 @@ class isABusinessDayTest {
     void testAllDaysOfFebruary() {
         LocalDateTime currentTime = LocalDateTime.now();
         LocalDate localDate = currentTime.toLocalDate();
+
         int daysInFeb = 0;
         daysInFeb = localDate.isLeapYear() ? 29 : 28;
+
         for (int i = 0; i < daysInFeb; i++) {
             LocalDateTime testDate = currentTime.withYear(2017).withMonth(2).withDayOfMonth(i + 1);
 
