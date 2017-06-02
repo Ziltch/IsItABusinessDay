@@ -9,8 +9,5 @@ If there are more days, one can add them as well. If no days, just send in an em
 
 
 TODO:
-Change return from true/false to enum (DayOff, BusinessDay)
-Add check for if BusinessDay is squeezed in between 2 DayOff's, make that an enum 'SqueezedDay'
-Look at J8 Time API and replace Calandar API use with it. 
 Make Tests for 2016, 2018, and a random year to check that everything works every year
-Make Test for a leapyear.
+Make Test for an entire leapyear.
