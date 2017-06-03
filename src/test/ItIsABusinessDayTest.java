@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -68,14 +67,9 @@ class isABusinessDayTest {
         for (int i = 0; i < daysInJan; i++) {
             LocalDateTime testDate = currentTime.withMonth(1).withDayOfMonth(i + 1);
 
-            Month month = testDate.getMonth();
-            DayOfWeek dayOfWeek = testDate.getDayOfWeek();
-
             if (testDate.getDayOfMonth() == 1) {
-                System.out.println(month + " " + dayOfWeek + " " + testDate.getDayOfMonth() + " " + "Fridag");
                 assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
             } else {
-                System.out.println(month + " " + dayOfWeek + " " + testDate.getDayOfMonth() + " " + "Arbeidsdag");
                 assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
             }
 
@@ -92,12 +86,7 @@ class isABusinessDayTest {
 
         for (int i = 0; i < daysInFeb; i++) {
             LocalDateTime testDate = currentTime.withYear(2017).withMonth(2).withDayOfMonth(i + 1);
-
-            Month month = testDate.getMonth();
-            DayOfWeek dayOfWeek = testDate.getDayOfWeek();
-
             assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
-            System.out.println(month + " " + dayOfWeek + " " + testDate.getDayOfMonth() + " " + "Arbeidsdag");
         }
     }
 
@@ -114,14 +103,9 @@ class isABusinessDayTest {
         for (int i = 0; i < daysInFeb; i++) {
             LocalDateTime testDate = currentTime.withYear(2016).withMonth(2).withDayOfMonth(i + 1);
 
-            Month month = testDate.getMonth();
-            DayOfWeek dayOfWeek = testDate.getDayOfWeek();
-
             if (testDate.getDayOfWeek().equals(DayOfWeek.SUNDAY)) {
-                System.out.println(month + " " + dayOfWeek + " " + testDate.getDayOfMonth() + " " + "Fridag");
                 assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate, notWorkingDaysInWeek));
             } else {
-                System.out.println(month + " " + dayOfWeek + " " + testDate.getDayOfMonth() + " " + "Arbeidsdag");
                 assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, notWorkingDaysInWeek));
             }
         }
@@ -176,7 +160,6 @@ class isABusinessDayTest {
             for (Map.Entry<LocalDateTime, String> holiday : holidays.entrySet()) {
 
                 if(testDate.getMonth() == holiday.getKey().getMonth() && testDate.getDayOfMonth() == holiday.getKey().getDayOfMonth()){
-                    System.out.println("Måned: " + holiday.getKey().getMonth() + ". Dag: " + holiday.getKey().getDayOfMonth() + " - " + holiday.getValue());
                     dayOff = true;
                 }
             }
@@ -184,10 +167,8 @@ class isABusinessDayTest {
                 assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
             } else {
                 if(currentTime.withMonth(3).withDayOfMonth(26).getDayOfYear() == i+1){
-                    System.out.println("Skvist inn dag: " + testDate.getMonth() + " " + testDate.getDayOfMonth());
                     assertEquals(TypeOfDay.SQUEEZEDINDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
                 } else {
-                    System.out.println("Arbeidsdag: " + testDate.getMonth() + " " + testDate.getDayOfMonth());
                     assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
                 }
             }
