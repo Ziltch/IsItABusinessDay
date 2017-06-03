@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CheckIfBusinessDayInNorway.iml" filepath="$PROJECT_DIR$/CheckIfBusinessDayInNorway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckIfBusinessDay.iml" filepath="$PROJECT_DIR$/CheckIfBusinessDay.iml" />
     </modules>
   </component>
 </project>
