@@ -21,7 +21,7 @@ public class ItIsABusinessDay{
      *
      * @param inputDay Input of the day one wants to to check the type of
      * @param daysOffInWeek Weekdays that are off each week
-     * @return TypeOfDay What type of day it is
+     * @return what TypeOfDay it is
      */
     public TypeOfDay itIsABusinessDay(LocalDateTime inputDay, List<DayOfWeek> daysOffInWeek) {
 
@@ -48,7 +48,7 @@ public class ItIsABusinessDay{
      *
      * @param day Input of the day one wants to to check the type of
      * @param daysOffInWeek Weekdays that are off each week
-     * @return boolean of whether the day is a business day or not
+     * @return true if day is a business, false if not
      */
     private boolean isDayBusinessDay(LocalDateTime day, List<DayOfWeek> daysOffInWeek){
         notWorkingDaysInWeek.clear();
@@ -59,9 +59,8 @@ public class ItIsABusinessDay{
 
         //Days off a week
         if (!(notWorkingDaysInWeek.isEmpty())) {
-            for (int i = 0; i < notWorkingDaysInWeek.size(); i++) {
-                System.out.println(notWorkingDaysInWeek.get(i));
-                if (day.getDayOfWeek() == notWorkingDaysInWeek.get(i)) {
+            for (DayOfWeek notWorkingDay : notWorkingDaysInWeek){
+                if (day.getDayOfWeek() == notWorkingDay) {
                     isBusinessDay = false;
                 }
             }

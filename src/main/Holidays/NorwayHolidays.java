@@ -17,7 +17,7 @@ public class NorwayHolidays {
      *
      * @param inputDay Input of the day one wants to to check the type of
      * @param dateOfEaster Day of easter for the year of the day getting checked
-     * @return boolean true if the day corresponds with a holiday, false if not
+     * @return true if @inputDay corresponds with a holiday, false if not
      */
     public boolean isItAHolidayInNorway(LocalDateTime inputDay, LocalDateTime dateOfEaster){
 

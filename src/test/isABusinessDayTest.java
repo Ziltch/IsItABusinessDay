@@ -148,4 +148,49 @@ class isABusinessDayTest {
         assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(currentTime.withMonth(6).withDayOfMonth(4), Collections.emptyList()));
         assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(currentTime.withMonth(6).withDayOfMonth(5), Collections.emptyList()));
     }
+
+    @Test
+    void testYear2016WhichIsLeapYear(){
+        LocalDateTime currentTime = LocalDateTime.now().withYear(2016);
+
+        Map<LocalDateTime,String> holidays = new HashMap<>();
+        holidays.put(currentTime.withMonth(1).withDayOfMonth(1),    "Første Nyttårsdag");
+        holidays.put(currentTime.withMonth(3).withDayOfMonth(20),   "Palmesøndag");
+        holidays.put(currentTime.withMonth(3).withDayOfMonth(24),   "Skjærtorsdag");
+        holidays.put(currentTime.withMonth(3).withDayOfMonth(25),   "Langfredag");
+        holidays.put(currentTime.withMonth(3).withDayOfMonth(27),   "Første påskedag");
+        holidays.put(currentTime.withMonth(3).withDayOfMonth(28),   "Andre påskedag");
+        holidays.put(currentTime.withMonth(5).withDayOfMonth(1),    "Offentlig høytidsdag");
+        holidays.put(currentTime.withMonth(5).withDayOfMonth(5),    "Kristi himmelfartsdag");
+        holidays.put(currentTime.withMonth(5).withDayOfMonth(15),   "Første pinsedag");
+        holidays.put(currentTime.withMonth(5).withDayOfMonth(16),   "Andre pinsedag");
+        holidays.put(currentTime.withMonth(5).withDayOfMonth(17),   "Grunnlovsdagen");
+        holidays.put(currentTime.withMonth(12).withDayOfMonth(25),  "Første juledag");
+        holidays.put(currentTime.withMonth(12).withDayOfMonth(26),  "Andre juledag");
+
+        int daysOfYear = currentTime.withYear(2016).toLocalDate().isLeapYear() ? 366 : 365;
+
+        for(int i = 0; i < daysOfYear; i++){
+            LocalDateTime testDate = currentTime.withDayOfYear(i+1);
+            boolean dayOff = false;
+            for (Map.Entry<LocalDateTime, String> holiday : holidays.entrySet()) {
+
+                if(testDate.getMonth() == holiday.getKey().getMonth() && testDate.getDayOfMonth() == holiday.getKey().getDayOfMonth()){
+                    System.out.println("Måned: " + holiday.getKey().getMonth() + ". Dag: " + holiday.getKey().getDayOfMonth() + " - " + holiday.getValue());
+                    dayOff = true;
+                }
+            }
+            if(dayOff){
+                assertEquals(TypeOfDay.DAYOFF, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
+            } else {
+                if(currentTime.withMonth(3).withDayOfMonth(26).getDayOfYear() == i+1){
+                    System.out.println("Skvist inn dag: " + testDate.getMonth() + " " + testDate.getDayOfMonth());
+                    assertEquals(TypeOfDay.SQUEEZEDINDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
+                } else {
+                    System.out.println("Arbeidsdag: " + testDate.getMonth() + " " + testDate.getDayOfMonth());
+                    assertEquals(TypeOfDay.BUSINESSDAY, itIsABusinessDayInNorway.itIsABusinessDay(testDate, Collections.emptyList()));
+                }
+            }
+        }
+    }
 }

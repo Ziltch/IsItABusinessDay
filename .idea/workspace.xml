@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fce7795f-4b21-480b-b871-6496ba0dcf5c" name="Default" comment="Re">
+    <list default="true" id="fce7795f-4b21-480b-b871-6496ba0dcf5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Easter.java" afterPath="$PROJECT_DIR$/src/main/Easter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java" afterPath="$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ItIsABusinessDay.java" afterPath="$PROJECT_DIR$/src/main/ItIsABusinessDay.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/isABusinessDayTest.java" afterPath="$PROJECT_DIR$/src/test/isABusinessDayTest.java" />
@@ -29,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Easter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Easter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Easter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="408">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItIsABusinessDay.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ItIsABusinessDay.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/ItIsABusinessDay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="391">
+              <caret line="61" column="65" lean-forward="true" selection-start-line="61" selection-start-column="65" selection-end-line="64" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +55,8 @@
       <file leaf-file-name="NorwayHolidays.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+            <state relative-caret-position="-680">
+              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +67,8 @@
       <file leaf-file-name="isABusinessDayTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/isABusinessDayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="152" column="39" lean-forward="true" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,10 +157,10 @@
         <option value="$PROJECT_DIR$/src/main/ItIsABusinessDayInNorway.java" />
         <option value="$PROJECT_DIR$/src/main/Holidays/TypeOfDay.java" />
         <option value="$PROJECT_DIR$/src/main/TypeOfDay.java" />
-        <option value="$PROJECT_DIR$/src/test/isABusinessDayTest.java" />
-        <option value="$PROJECT_DIR$/src/main/ItIsABusinessDay.java" />
-        <option value="$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java" />
         <option value="$PROJECT_DIR$/src/main/Easter.java" />
+        <option value="$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java" />
+        <option value="$PROJECT_DIR$/src/main/ItIsABusinessDay.java" />
+        <option value="$PROJECT_DIR$/src/test/isABusinessDayTest.java" />
       </list>
     </option>
   </component>
@@ -413,59 +412,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.isABusinessDayTest.is15thOfAprilASqueezedDay">
-    <configuration default="false" name="isABusinessDayTest.testAllDaysOfFebruary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CheckIfBusinessDayInNorway" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.isABusinessDayTest" />
-      <option name="METHOD_NAME" value="testAllDaysOfFebruary" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="isABusinessDayTest.is15thofAprilASqueezedDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CheckIfBusinessDayInNorway" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.isABusinessDayTest" />
-      <option name="METHOD_NAME" value="is15thofAprilASqueezedDay" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.isABusinessDayTest.testYear2016WhichIsLeapYear">
     <configuration default="false" name="isABusinessDayTest.is15thOfAprilASqueezedDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -531,6 +478,58 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.isABusinessDayTest" />
       <option name="METHOD_NAME" value="testAllEasterHolidaysFor2017" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="isABusinessDayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CheckIfBusinessDayInNorway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.isABusinessDayTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="isABusinessDayTest.testYear2016WhichIsLeapYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CheckIfBusinessDayInNorway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.isABusinessDayTest" />
+      <option name="METHOD_NAME" value="testYear2016WhichIsLeapYear" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -806,19 +805,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllDaysOfFebruary" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thofAprilASqueezedDay" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thOfAprilASqueezedDay" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidays" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidaysFor2017" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thOfAprilASqueezedDay" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidays" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidaysFor2017" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testYear2016WhichIsLeapYear" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thOfAprilASqueezedDay" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidaysFor2017" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidays" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thofAprilASqueezedDay" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllDaysOfFebruary" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testYear2016WhichIsLeapYear" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.is15thOfAprilASqueezedDay" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidaysFor2017" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.isABusinessDayTest.testAllEasterHolidays" />
       </list>
     </recent_temporary>
   </component>
@@ -866,39 +865,46 @@
       <option name="project" value="LOCAL" />
       <updated>1496445185409</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Renamed variables and added Javadoc">
+      <created>1496446133382</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496446133382</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="isABusinessDayTest_is15thOfAprilASqueezedDay - 2017.06.03 at 01h 10m 32s.xml">
-      <configuration name="isABusinessDayTest.is15thOfAprilASqueezedDay" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 40m 26s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 03m 19s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 41m 17s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 04m 00s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 41m 39s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 05m 13s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 42m 29s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 07m 02s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 44m 48s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 07m 14s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 48m 51s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 08m 22s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 49m 42s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 08m 38s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 49m 52s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 09m 17s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 57m 51s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="isABusinessDayTest_testAllEasterHolidaysFor2017 - 2017.06.03 at 01h 10m 18s.xml">
-      <configuration name="isABusinessDayTest.testAllEasterHolidaysFor2017" configurationId="JUnit" />
+    <history-entry file="isABusinessDayTest_testYear2016WhichIsLeapYear - 2017.06.03 at 11h 58m 21s.xml">
+      <configuration name="isABusinessDayTest.testYear2016WhichIsLeapYear" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -917,7 +923,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15469614" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15469614" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -926,7 +932,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -943,14 +949,15 @@
     <MESSAGE value="Fixed error with naming" />
     <MESSAGE value="Renamed some things for more order" />
     <MESSAGE value="Renamed Files&#10;Separated code for cleaner look&#10;Changed out Calendar with Java.Time API&#10;Changed return to be ENUM&#10;Added Squeezed In Day ENUM&#10;Made Test for Squeezed in day&#10;Made Test for All easter days 2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed Files&#10;Separated code for cleaner look&#10;Changed out Calendar with Java.Time API&#10;Changed return to be ENUM&#10;Added Squeezed In Day ENUM&#10;Made Test for Squeezed in day&#10;Made Test for All easter days 2017" />
+    <MESSAGE value="Renamed variables and added Javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed variables and added Javadoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1184,30 +1191,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ItIsABusinessDay.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Easter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/isABusinessDayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1227,10 +1214,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Easter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Holidays/NorwayHolidays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="-680">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/isABusinessDayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="152" column="39" lean-forward="true" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ItIsABusinessDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="61" column="65" lean-forward="true" selection-start-line="61" selection-start-column="65" selection-end-line="64" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
