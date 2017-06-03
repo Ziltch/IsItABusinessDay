@@ -1,4 +1,4 @@
-# IsItABusinessDayInNorway
+# IsItABusinessDay
 a check for whether a day(today) is a business day in Norway
 It should be able to take any day as input as of now, but not everything has yet been tested well enough as of yet.
 
@@ -9,5 +9,4 @@ If there are more days, one can add them as well. If no days, just send in an em
 
 
 TODO:
-Make Tests for 2016, 2018, and a random year to check that everything works every year
-Make Test for an entire leapyear.
+Make Tests for a random year to check that everything works every year
