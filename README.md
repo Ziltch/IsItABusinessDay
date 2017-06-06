@@ -10,3 +10,6 @@ Decided to not add any functionality for this as that can be handled on one's ow
 
 TODO:
 Make Tests for a random year
+rename packs
+make holday class static 
+push the LocalDateTime to LocalDate change
